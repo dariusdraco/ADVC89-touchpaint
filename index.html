@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1> Paint </h1>
+        <br>
+        <canvas id="myCanvas" width="500" height="300"></canvas>
+
+        <div>
+            <br><br>
+            Radius <select name="radius" id="radius">
+                <option value="4">1</option>
+                <option value="8">2</option>
+                <option value="12">3</option>
+                <option value="16">4</option>
+                <option value="20">5</option>
+                <option value="24">6</option>
+            </select>
+            &nbsp;&nbsp;
+            Color <input type="text" id="color" placeholder=" enter color ">
+            &nbsp;&nbsp;
+            Width <select name="width" id="width">
+                <option value="1">1.5</option>
+                <option value="2">2.5</option>
+                <option value="3">3.5</option>
+                <option value="4">4.5</option>
+                <option value="8">5.5</option>
+                <option value="12">6.5</option>
+            </select>
+            <br><br><button id="save" touchevent="save()">save</button>
+            <br> <button id="clear" touchevent="cleaer()"> clear </button>
+        </div>
+    </center>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
